@@ -336,16 +336,23 @@ img.eqwl {
 }
 
 table {
-    border: 2px solid black;
+    border: none;
+    border-top: 2px solid #aaaaaa;
+    border-bottom: 2px solid #aaaaaa;
     border-collapse: collapse;
 }
 
+#program {
+  width: 100%;
+}
+
 td {
-    padding: 2px;
+    padding: 7px;
     padding-left: 0.5em;
     padding-right: 0.5em;
-    text-align: center;
-    border: 1px solid gray;
+    text-align: left;
+    border-top: 1px solid #aaaaaa;
+    border-bottom: 1px solid #aaaaaa
 }
 
 table + table {
