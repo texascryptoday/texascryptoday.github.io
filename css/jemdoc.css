@@ -355,6 +355,10 @@ td {
     border-bottom: 1px solid #aaaaaa
 }
 
+td.c1 {
+  min-width: 60pt;
+}
+
 table + table {
     margin-top: 1em;
 }
