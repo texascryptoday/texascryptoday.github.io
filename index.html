@@ -150,31 +150,22 @@ poly(n, log k).
 <h3>Is It Even Possible? On the Parallel Composition of Asynchronous Cryptographic Protocols<span class = "iconbox"><img class = "pubicon notpresent" src = "/img/icons/pdf.svg" alt = "PDF"/><img class = "pubicon notpresent" src = "/img/icons/video.svg" alt = "Video"/><img class = "pubicon notpresent" src = "/img/icons/slides.svg" alt = "Slides"/></span></h3>
 <p>Pouyan Forghani (Texas A&amp;M University) <br />
 </p>
-<p>Cryptographers often idealize the underlying network and model it as
-synchronous by assuming round-based progress and message delivery to simplify
-their design and analysis. However, modeling real-world networks with
-synchronous communication often incurs significant overhead or introduces
-unrealistic assumptions about message delivery guarantees. Therefore, the
-value of studying synchronous networks critically hinges on the
-ability to translate those results to the more challenging asynchronous
-setting.
+<p>In the design and analysis of cryptographic protocols it is often assumed an
+idealized model where the communication is synchronous and messages are always
+delivered by the start of the next round. However, while substantially
+simplifying things, hiding environmental nuisances and allowing us to focus on
+the task at hand, this strong assumption incurs significant overhead in
+practice.
 </p>
-<p>In this talk, we show that running individual protocols in parallel to realize
-the parallel composition of their desired functionalities, which seamlessly
-works in the synchronous setting, does not extend to asynchronous
-environments. Further, we rule out the possibility of any black-box compiler
-for the parallel composition of general protocol classes in such settings.
-Yet, not everything is lost: We also offer hope by introducing a protocol
-class along with a compiler designed to achieve parallel composition in
-asynchronous networks. Remarkably, our protocol class can accommodate all
-existing asynchronous MPC (A-MPC) protocols with only minor adjustments.
-Furthermore, despite the probabilistic termination inherent in all A-MPC
-protocols, which naturally leads to a round blow-up under concurrent
-composition, our compiler effectively preserves the round complexity of
-protocols in that class.
+<p>In this talk, we will show that, as opposed to the synchronous setting,
+well-established techniques for parallel protocol composition completely break
+in the asynchronous setting. Specifically, we rule out the possibility of any
+black-box compiler for the parallel composition of arbitrary protocols. On the
+positive side, we introduce a round-preserving compiler for a restricted class
+of protocols (which includes all existing asynchronous MPC protocols) that
+achieves parallel composition in asynchronous networks.
 </p>
-<p>Joint work with Ran Cohen, Juan Garay, Rutvik Patel, and Vassilis
-Zikas.
+<p>Joint work with Ran Cohen, Juan Garay, Rutvik Patel, and Vassilis Zikas.
 </p>
 <p><hr>
 </p>
