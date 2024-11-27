@@ -48,7 +48,204 @@ future events, please subscribe to the
 </p>
 <h2>Upcoming Event</h2>
 <p>The next Texas Crypto Day will be held at Rice University on December 13, 2024.
-The program and registration information will be posted here as we get closer to the event.
+A tentative program is provided below:
+</p>
+<h3>Program</h3>
+<table id="program">
+<tr class="r1"><td class="c1">10:15-10:45 </td><td class="c2"> Coffee</td></tr>
+<tr class="r2"><td class="c1">10:45-11:30 </td><td class="c2"> <a href="https://jagaray.com/" target=&ldquo;blank&rdquo;>Juan Garay</a> (Texas A&amp;M University) <br /><a href="#talk1">Adaptive Security, Erasures, and Network Assumptions in Communication-Local MPC</a><span class = "iconbox"><a href="https://eprint.iacr.org/2024/1489.pdf" target=&ldquo;blank&rdquo;><img class = "pubicon" src = "/img/icons/pdf.svg" alt = "PDF"/></a><img class = "pubicon notpresent" src = "/img/icons/video.svg" alt = "Video"/><img class = "pubicon notpresent" src = "/img/icons/slides.svg" alt = "Slides"/></span></td></tr>
+<tr class="r3"><td class="c1">11:45-12:30 </td><td class="c2"> <a href="https://sites.google.com/view/naihuichia" target=&ldquo;blank&rdquo;>Nai-Hui Chia</a> (Rice University) <br /><a href="#talk2">Complexity Theory for Quantum Promise Problems and Its Applications to Cryptography</a><span class = "iconbox"><a href="https://arxiv.org/pdf/2411.03716" target=&ldquo;blank&rdquo;><img class = "pubicon" src = "/img/icons/pdf.svg" alt = "PDF"/></a><img class = "pubicon notpresent" src = "/img/icons/video.svg" alt = "Video"/><img class = "pubicon notpresent" src = "/img/icons/slides.svg" alt = "Slides"/></span></td></tr>
+<tr class="r4"><td class="c1">12:30-2:00 </td><td class="c2"> Lunch (provided)</td></tr>
+<tr class="r5"><td class="c1">2:00-2:30 </td><td class="c2"> <a href="https://www.cs.utexas.edu/~jchamps/" target=&ldquo;blank&rdquo;>Jeff Champion</a> (UT Austin) <br /><a href="#talk3">Distributed Broadcast Encryption from Lattices</a><span class = "iconbox"><a href="https://eprint.iacr.org/2024/1417.pdf" target=&ldquo;blank&rdquo;><img class = "pubicon" src = "/img/icons/pdf.svg" alt = "PDF"/></a><img class = "pubicon notpresent" src = "/img/icons/video.svg" alt = "Video"/><img class = "pubicon notpresent" src = "/img/icons/slides.svg" alt = "Slides"/></span></td></tr>
+<tr class="r6"><td class="c1">2:30-3:00 </td><td class="c2"> Brady Testa (Texas A&amp;M University) <br /><a href="#talk4">A Composability Treatment of Bitcoin’s Transaction Ledger with Variable Difficulty</a><span class = "iconbox"><img class = "pubicon notpresent" src = "/img/icons/pdf.svg" alt = "PDF"/><img class = "pubicon notpresent" src = "/img/icons/video.svg" alt = "Video"/><img class = "pubicon notpresent" src = "/img/icons/slides.svg" alt = "Slides"/></span></td></tr>
+<tr class="r7"><td class="c1">3:00-3:30 </td><td class="c2"> Coffee</td></tr>
+<tr class="r8"><td class="c1">3:30-4:00 </td><td class="c2"> <a href="https://cs.utexas.edu/~dwu4/papers/" target=&ldquo;blank&rdquo;>David Wu</a> (UT Austin) <br /><a href="#talk5">New Techniques for Preimage Sampling: Improved NIZKs and More from LWE</a><span class = "iconbox"><a href="https://eprint.iacr.org/2024/1401.pdf" target=&ldquo;blank&rdquo;><img class = "pubicon" src = "/img/icons/pdf.svg" alt = "PDF"/></a><img class = "pubicon notpresent" src = "/img/icons/video.svg" alt = "Video"/><img class = "pubicon notpresent" src = "/img/icons/slides.svg" alt = "Slides"/></span></td></tr>
+<tr class="r9"><td class="c1">4:00-4:30 </td><td class="c2"> <a href="https://personal.utdallas.edu/~Yvo.Desmedt/" target=&ldquo;blank&rdquo;>Yvo Desmedt</a> (UT Dallas) <br /><a href="#talk6">TBD</a><span class = "iconbox"><img class = "pubicon notpresent" src = "/img/icons/pdf.svg" alt = "PDF"/><img class = "pubicon notpresent" src = "/img/icons/video.svg" alt = "Video"/><img class = "pubicon notpresent" src = "/img/icons/slides.svg" alt = "Slides"/></span>
+</td></tr></table>
+<h2>Abstracts</h2>
+<p><a id = "talk1"></a>
+</p>
+<h3>Adaptive Security, Erasures, and Network Assumptions in Communication-Local MPC<span class = "iconbox"><a href="https://eprint.iacr.org/2024/1489.pdf" target=&ldquo;blank&rdquo;><img class = "pubicon" src = "/img/icons/pdf.svg" alt = "PDF"/></a><img class = "pubicon notpresent" src = "/img/icons/video.svg" alt = "Video"/><img class = "pubicon notpresent" src = "/img/icons/slides.svg" alt = "Slides"/></span></h3>
+<p><a href="https://jagaray.com/" target=&ldquo;blank&rdquo;>Juan Garay</a> (Texas A&amp;M University) <br />
+</p>
+<p>The problem of reliable/secure all-to-all communication over low-degree
+networks has been essential for communication-local (CL) \(n\)-party secure
+multi-party computation (MPC) (i.e., MPC protocols where every party directly
+communicates only with a few parties, typically poly-logarithmic in \(n\)) and
+more recently for communication over ad hoc networks, which are used in
+blockchain protocols. However, a limited number of adaptively secure solutions
+exist, and they all make relatively strong assumptions on the ability of
+parties to act in some specific manner before the adversary can corrupt them.
+Two such assumptions were made in the work of Chandran et al. <a href="ITCS’15" target=&ldquo;blank&rdquo;>ITCS’15</a>—
+parties can (a) multi-send messages to several receivers simultaneously;
+and (b) securely erase the message and the identities of the receivers, before
+the adversary gets a chance to corrupt the sender (even if a receiver is
+corrupted).
+</p>
+<p>A natural question to ask is: Are these assumptions necessary for adaptively
+secure CL-MPC? In this work we characterize the feasibility landscape for
+all-to-all reliable message transmission (RMT) under these two assumptions,
+and use this characterization to obtain (asymptotically) tight feasibility
+results for CL-MPC.
+</p>
+<p>Joint work with Nishanth Chandran, Ankit Kumar Misra, Rafail Ostrovsky, and
+Vassilis Zikas.
+</p>
+<p><hr>
+</p>
+<p><a id = "talk2"></a>
+</p>
+<h3>Complexity Theory for Quantum Promise Problems and Its Applications to Cryptography<span class = "iconbox"><a href="https://arxiv.org/pdf/2411.03716" target=&ldquo;blank&rdquo;><img class = "pubicon" src = "/img/icons/pdf.svg" alt = "PDF"/></a><img class = "pubicon notpresent" src = "/img/icons/video.svg" alt = "Video"/><img class = "pubicon notpresent" src = "/img/icons/slides.svg" alt = "Slides"/></span></h3>
+<p><a href="https://sites.google.com/view/naihuichia" target=&ldquo;blank&rdquo;>Nai-Hui Chia</a> (Rice University) <br />
+</p>
+<p>Quantum computing introduces many well-motivated problems rooted in physics,
+asking to com- pute information from input quantum states. Identifying the
+computational hardness of these prob- lems yields potential applications with
+far-reaching impacts across both the realms of computer science and physics.
+However, these new problems do not neatly fit within the scope of exist- ing
+complexity theory. The standard classes primarily cater to problems with
+classical inputs and outputs, leaving a gap to characterize problems involving
+quantum states as inputs. Notably, the emergence of new quantum cryptographic
+primitives is reshaping our understanding of the minimal assumption in
+cryptography, which directly affects the relationships between cryptography
+and com- plexity theory; in particular, the connection between Minicrypt and
+Pessiland in Impagliazzo’s five worlds view is somewhat unclear — one reason
+for this is that breaking new quantum cryptographic primitives involves
+solving problems with quantum inputs, while the complexity classes central to
+Pessiland, Heuristica, and Algorithmica are grounded in problems with
+classical inputs and outputs.
+</p>
+<p>In this talk, I will introduce the complexity theory for quantum promise
+problems and potential applications. Quantum promise problems are
+quantum-input decision problems asking to identify whether input quantum
+states (that can be pure and mixed states) satisfy specific properties. We
+will see structural results for complexity classes, p<i>mBQP, p</i>mQ(C)MA,
+p<i>mQSZKhv, p</i>mQIP, and p<i>mPSPACE, where “p</i>mC” denotes the corresponding
+quantum promise complexity class with pure (p) or mixed (m) quantum input
+states for any classical complexity class C. Surprisingly, our results reveal
+relationships that differ from their classical counterparts, such as p<i>mQIP ̸=
+p</i>mPSPACE and mcoQSZKhv ̸= mQSZKhv. Building on this framework, we will see
+applications to cryptography, demonstrating that breaking one-way state
+generators and pseudorandom states, and EFI has mQCMA and mQSZKhv upper
+bounds, and that the average-case hardness of pQCZKhv implies the existence of
+EFI. Notably, our results offer new insights into Impagliazzo’s five worlds
+view. Roughly, by substituting classical complexity classes in Pessiland,
+Heuristica, and Algorithmica with mBQP and mQCMA or mQSZKhv, we establish a
+natural connection between quantum cryptography and quantum promise complexity
+theory.
+</p>
+<p><hr>
+</p>
+<p><a id = "talk3"></a>
+</p>
+<h3>Distributed Broadcast Encryption from Lattices<span class = "iconbox"><a href="https://eprint.iacr.org/2024/1417.pdf" target=&ldquo;blank&rdquo;><img class = "pubicon" src = "/img/icons/pdf.svg" alt = "PDF"/></a><img class = "pubicon notpresent" src = "/img/icons/video.svg" alt = "Video"/><img class = "pubicon notpresent" src = "/img/icons/slides.svg" alt = "Slides"/></span></h3>
+<p><a href="https://www.cs.utexas.edu/~jchamps/" target=&ldquo;blank&rdquo;>Jeff Champion</a> (UT Austin) <br />
+</p>
+<p>A broadcast encryption scheme allows a user to encrypt a message to \(N\)
+recipients with a ciphertext whose size scales sublinearly with \(N\). While
+broadcast encryption enables succinct encrypted broadcasts, it also introduces
+a strong trust assumption and a single point of failure; namely, there is a
+central authority who generates the decryption keys for all users in the
+system. Distributed broadcast encryption offers an appealing alternative where
+there is a one-time (trusted) setup process that generates a set of public
+parameters. Thereafter, users can independently generate their own public keys
+and post them to a public-key directory. Moreover, anyone can broadcast an
+encrypted message to any subset of user public keys with a ciphertext whose
+size scales sublinearly with the size of the broadcast set. Unlike traditional
+broadcast encryption, there are no long-term secrets in distributed broadcast
+encryption and users can join the system at any time (by posting their public
+key to the public-key directory).
+</p>
+<p>Previously, distributed broadcast encryption schemes were known from standard
+pairing-based assumptions or from powerful tools like indistinguishability
+obfuscation or witness encryption. In this talk, I will describe the first
+distributed broadcast encryption scheme from a falsifiable lattice assumption.
+Specifically, we rely on the \(\ell\)-succinct learning with errors (LWE) assumption
+introduced by Wee (CRYPTO 2024). Previously, the only lattice-based candidate
+for distributed broadcast encryption goes through general-purpose witness
+encryption, which in turn is only known from the private-coin evasive LWE
+assumption, a strong and non-falsifiable lattice assumption. Along the way, I
+will also describe a direct construction of broadcast encryption from lattices
+that does not rely on any homomorphic evaluation machinery.
+</p>
+<p>Joint work with David Wu.
+</p>
+<p><hr>
+</p>
+<p><a id = "talk4"></a>
+</p>
+<h3>A Composability Treatment of Bitcoin’s Transaction Ledger with Variable Difficulty<span class = "iconbox"><img class = "pubicon notpresent" src = "/img/icons/pdf.svg" alt = "PDF"/><img class = "pubicon notpresent" src = "/img/icons/video.svg" alt = "Video"/><img class = "pubicon notpresent" src = "/img/icons/slides.svg" alt = "Slides"/></span></h3>
+<p>Brady Testa (Texas A&amp;M University) <br />
+</p>
+<p>As the first proof-of-work (PoW) permissionless blockchain, Bitcoin aims at
+maintaining a decentralized yet consistent transaction ledger as protocol
+participants (“miners”) join and leave as they please. This is achieved by
+means of a subtle PoW difficulty adjustment mechanism that adapts to the
+perceived block generation rate, and important steps have been taken in
+previous work to provide a rigorous analysis of the conditions (such as bounds
+on dynamic participation) that are sufficient for Bitcoin’s security
+properties to be ascertained.
+</p>
+<p>Such existing analysis, however, is property-based, and as such only
+guarantees security when the proto- col is run in isolation. In this paper we
+present the first (to our knowledge) simulation-based analysis of the Bitcoin
+ledger in the dynamic setting where it operates, and show that the protocol
+abstraction known as the Bitcoin backbone protocol emulates, under certain
+participation restrictions, Bitcoin’s intended specification. Our formulation
+and analysis extend the existing Universally Composable treat- ment for the
+fixed-difficulty setting, and develop techniques that might be of broader
+applicability, in particular to other composable formulations of blockchain
+protocols that rely on difficulty adjustment.
+</p>
+<p>Joint work with Juan Garay, Yun Lu, Julien Prat, and Vassilis Zikas.
+</p>
+<p><hr>
+</p>
+<p><a id = "talk5"></a>
+</p>
+<h3>New Techniques for Preimage Sampling: Improved NIZKs and More from LWE<span class = "iconbox"><a href="https://eprint.iacr.org/2024/1401.pdf" target=&ldquo;blank&rdquo;><img class = "pubicon" src = "/img/icons/pdf.svg" alt = "PDF"/></a><img class = "pubicon notpresent" src = "/img/icons/video.svg" alt = "Video"/><img class = "pubicon notpresent" src = "/img/icons/slides.svg" alt = "Slides"/></span></h3>
+<p><a href="https://cs.utexas.edu/~dwu4/papers/" target=&ldquo;blank&rdquo;>David Wu</a> (UT Austin) <br />
+</p>
+<p>Recent constructions of vector commitments and non-interactive zero-knowledge
+(NIZK) proofs from LWE implicitly solve a shifted multi-preimage sampling
+problem. In this talk I will introduce the shifted multi-preimage sampling
+problem and then show how recent lattice-based constructions of vector
+commitments and hidden-bits model NIZKs can be viewed from the perspective of
+designing a solution to the shifted multi-preimage sampling problem. I will
+then describe a new technique for solving the shifted multi-preimage sampling
+problem by deriving a structured matrix with a public trapdoor from a short
+random string.
+</p>
+<p>These techniques immediately yields the following improvements to
+lattice-based vector commitments and hidden-bits model NIZKs:
+</p>
+<ul>
+<li><p>We provide a dual-mode instantiation of the hidden-bits model (and by
+correspondence, a dual-mode NIZK proof for NP) with (1) a linear-size common
+reference string (CRS); (2) a transparent setup in hiding mode (which yields
+statistical NIZK arguments); and (3) hardness from LWE with a polynomial
+modulus-to-noise ratio. This improves upon the work of Waters (STOC 2024)
+which required a quadratic-size structured reference string (in both modes)
+and LWE with a super-polynomial modulus-to-noise ratio.
+</p>
+</li>
+</ul>
+<ul>
+<li><p>We give a statistically-hiding vector commitment with transparent setup and
+polylogarithmic-size CRS, commitments, and openings from SIS. This
+simultaneously improves upon the vector commitment schemes of de Castro and
+Peikert (EUROCRYPT 2023) as well as Wee and Wu (EUROCRYPT 2023).
+</p>
+</li>
+</ul>
+<p>Joint work with Brent Waters and Hoeteck Wee.
+</p>
+<p><hr>
+</p>
+<p><a id = "talk6"></a>
+</p>
+<h3>TBD<span class = "iconbox"><img class = "pubicon notpresent" src = "/img/icons/pdf.svg" alt = "PDF"/><img class = "pubicon notpresent" src = "/img/icons/video.svg" alt = "Video"/><img class = "pubicon notpresent" src = "/img/icons/slides.svg" alt = "Slides"/></span></h3>
+<p><a href="https://personal.utdallas.edu/~Yvo.Desmedt/" target=&ldquo;blank&rdquo;>Yvo Desmedt</a> (UT Dallas) <br />
 </p>
 <h2>Past Events</h2>
 <ul>
