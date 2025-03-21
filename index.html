@@ -61,7 +61,7 @@ program is provided below:
 <tr class="r1"><td class="c1">10:00-10:30am </td><td class="c2"> Coffee</td></tr>
 <tr class="r2"><td class="c1">10:30-11:30am </td><td class="c2"> <a href="https://elaineshi.com/" target=&ldquo;blank&rdquo;>Elaine Shi</a> (CMU) <br /><b>Invited Talk:</b> <a href="#talk1">Foundations of Decentralized Mechanism Design</a><span class = "iconbox"><img class = "pubicon notpresent" src = "/img/icons/pdf.svg" alt = "PDF"/><img class = "pubicon notpresent" src = "/img/icons/video.svg" alt = "Video"/><img class = "pubicon notpresent" src = "/img/icons/slides.svg" alt = "Slides"/></span></td></tr>
 <tr class="r3"><td class="c1">11:30-11:50am </td><td class="c2"> Coffee</td></tr>
-<tr class="r4"><td class="c1">11:50-12:15pm </td><td class="c2"> <a href="https://sites.google.com/view/naihuichia" target=&ldquo;blank&rdquo;>Nai-Hui Chia</a> (Rice University) <br /><a href="#talk2">TBD</a><span class = "iconbox"><img class = "pubicon notpresent" src = "/img/icons/pdf.svg" alt = "PDF"/><img class = "pubicon notpresent" src = "/img/icons/video.svg" alt = "Video"/><img class = "pubicon notpresent" src = "/img/icons/slides.svg" alt = "Slides"/></span></td></tr>
+<tr class="r4"><td class="c1">11:50-12:15pm </td><td class="c2"> <a href="https://sites.google.com/view/naihuichia" target=&ldquo;blank&rdquo;>Nai-Hui Chia</a> (Rice University) <br /><a href="#talk2">New Results on Quantum Commitments</a><span class = "iconbox"><img class = "pubicon notpresent" src = "/img/icons/pdf.svg" alt = "PDF"/><img class = "pubicon notpresent" src = "/img/icons/video.svg" alt = "Video"/><img class = "pubicon notpresent" src = "/img/icons/slides.svg" alt = "Slides"/></span></td></tr>
 <tr class="r5"><td class="c1">12:15-2pm </td><td class="c2"> Lunch (on your own)</td></tr>
 <tr class="r6"><td class="c1">2:00-2:25pm </td><td class="c2"> <a href="https://people.csail.mit.edu/ahenz/" target=&ldquo;blank&rdquo;>Alexandra Henzinger</a> (MIT) <br /><a href="#talk3">Somewhat Homomorphic Encryption from Linear Homomorphism and Sparse LPN</a><span class = "iconbox"><a href="https://eprint.iacr.org/2024/1760.pdf" target=&ldquo;blank&rdquo;><img class = "pubicon" src = "/img/icons/pdf.svg" alt = "PDF"/></a><img class = "pubicon notpresent" src = "/img/icons/video.svg" alt = "Video"/><img class = "pubicon notpresent" src = "/img/icons/slides.svg" alt = "Slides"/></span></td></tr>
 <tr class="r7"><td class="c1">2:25-2:50pm </td><td class="c2"> <a href="https://dcol.me/" target=&ldquo;blank&rdquo;>Daniel Collins</a> (Texas A&amp;M) <br /><a href="#talk4">Juggernaut: Efficient Crypto-Agnostic Byzantine Agreement</a><span class = "iconbox"><a href="https://eprint.iacr.org/2024/1601.pdf" target=&ldquo;blank&rdquo;><img class = "pubicon" src = "/img/icons/pdf.svg" alt = "PDF"/></a><img class = "pubicon notpresent" src = "/img/icons/video.svg" alt = "Video"/><img class = "pubicon notpresent" src = "/img/icons/slides.svg" alt = "Slides"/></span></td></tr>
@@ -98,7 +98,7 @@ to play by the book.
 </p>
 <p><a id = "talk2"></a>
 </p>
-<h3>TBD<span class = "iconbox"><img class = "pubicon notpresent" src = "/img/icons/pdf.svg" alt = "PDF"/><img class = "pubicon notpresent" src = "/img/icons/video.svg" alt = "Video"/><img class = "pubicon notpresent" src = "/img/icons/slides.svg" alt = "Slides"/></span></h3>
+<h3>New Results on Quantum Commitments<span class = "iconbox"><img class = "pubicon notpresent" src = "/img/icons/pdf.svg" alt = "PDF"/><img class = "pubicon notpresent" src = "/img/icons/video.svg" alt = "Video"/><img class = "pubicon notpresent" src = "/img/icons/slides.svg" alt = "Slides"/></span></h3>
 <p><a href="https://sites.google.com/view/naihuichia" target=&ldquo;blank&rdquo;>Nai-Hui Chia</a> (Rice University) <br />
 </p>
 <p><hr>
@@ -133,33 +133,33 @@ Vaikuntanathan (to appear at EUROCRYPT 2025).
 <p><a href="https://dcol.me/" target=&ldquo;blank&rdquo;>Daniel Collins</a> (Texas A&amp;M) <br />
 </p>
 <p>It is well known that a trusted setup allows one to solve the Byzantine
-agreement problem in the presence of t &lt; n<i>2 corruptions, bypassing the
-setup-free t &lt; n</i>3 barrier. Alas, the overwhelming majority of protocols in
+agreement problem in the presence of \(t &lt; n/2\) corruptions, bypassing the
+setup-free \(t &lt; n/3\) barrier. Alas, the overwhelming majority of protocols in
 the literature have the caveat that their security crucially hinges on the
 security of the cryptography and setup, to the point where if the cryptography
 is broken, even a single corrupted party can violate the security of the
-protocol. Thus these protocols provide higher corruption resilience (n<i>2
-instead of n</i>3) for the price of increased assumptions. Is this trade-off
+protocol. Thus these protocols provide higher corruption resilience (\(n/2\)
+instead of \(n/3\)) for the price of increased assumptions. Is this trade-off
 necessary?
 </p>
 <p>We further the study of crypto-agnostic Byzantine agreement among parties that
-answers this question in the negative. Specifically, let t<u>s and t</u>i denote
-two parameters such that (1) 2t<u>i + t</u>s &lt; n, and (2) t<u>i ≤ t</u>s &lt; n<i>2.
+answers this question in the negative. Specifically, let \(t_s\) and \(t_i\) denote
+two parameters such that (1) \(2t_i + t_s &lt; n\), and (2) \(t_i \le t_s &lt; n/2\).
 Crypto-agnostic Byzantine agreement ensures agreement among honest parties if
-(1) the adversary is computationally bounded and corrupts up to t<u>s parties,
-or (2) the adversary is computationally unbounded and corrupts up to t</u>i
+(1) the adversary is computationally bounded and corrupts up to \(t_s\) parties,
+or (2) the adversary is computationally unbounded and corrupts up to \(t_i\)
 parties, and is moreover given all secrets of all parties established during
 the setup. We propose a compiler that transforms any pair of
 resilience-optimal Byzantine agreement protocols in the authenticated and
 information-theoretic setting into one that is crypto-agnostic. Our compiler
-has several attractive qualities, including using only O(kn^2) bits for
+has several attractive qualities, including using only \(O(kn^2)\) bits for
 security parameter k over the two underlying Byzantine agreement protocols,
 and preserving round and communication complexity in the authenticated
 setting. In particular, our results improve the state-of-the-art in bit
 complexity by at least two factors of n and provide either early stopping
 (deterministic) or expected constant round complexity (randomized). We
 therefore provide fallback security for authenticated Byzantine agreement for
-free for t_i ≤ n</i>4.
+free for \(t_i \le n/4\).
 </p>
 <p>Joint work with Yuval Efron and Jovan Komatovic (to appear at EUROCRYPT 2025).
 </p>
