@@ -51,6 +51,199 @@ future events, please subscribe to the
 <h2>Upcoming Event</h2>
 <p>The next Texas Crypto Day will be held at Texas A&amp;M on April 24, 2026. More information forthcoming.
 </p>
+<h3>Program</h3>
+<table id="program">
+<tr class="r1"><td class="c1">10:00-10:30 </td><td class="c2"> Coffee</td></tr>
+<tr class="r2"><td class="c1">10:30-10:55 </td><td class="c2"> <a href="https://sites.google.com/view/george-lu/" target=&ldquo;blank&rdquo;>George Lu</a> (UT Austin) <br /><a href="#talk1">Succinct Garbled Circuits with Low-Depth Garbling Algorithms</a><span class = "iconbox"><a href="https://eprint.iacr.org/2025/2308.pdf" target=&ldquo;blank&rdquo;><img class = "pubicon" src = "/img/icons/pdf.svg" alt = "PDF"/></a><img class = "pubicon notpresent" src = "/img/icons/video.svg" alt = "Video"/><img class = "pubicon notpresent" src = "/img/icons/slides.svg" alt = "Slides"/></span></td></tr>
+<tr class="r3"><td class="c1">10:55-11:10 </td><td class="c2"> Yi Mao (atsec information security corporation) <br /><a href="#talk2">From Standards to Validation: Cryptography in Practice</a><span class = "iconbox"><img class = "pubicon notpresent" src = "/img/icons/pdf.svg" alt = "PDF"/><img class = "pubicon notpresent" src = "/img/icons/video.svg" alt = "Video"/><img class = "pubicon notpresent" src = "/img/icons/slides.svg" alt = "Slides"/></span></td></tr>
+<tr class="r4"><td class="c1">11:10-11:30 </td><td class="c2"> Coffee</td></tr>
+<tr class="r5"><td class="c1">11:30-12:30 </td><td class="c2"> <a href="https://yuvali.cswp.cs.technion.ac.il/" target=&ldquo;blank&rdquo;>Yuval Ishai</a> (Technion and AWS) <br /><b>Invited Talk:</b> &ndash;<span class = "iconbox"><img class = "pubicon notpresent" src = "/img/icons/pdf.svg" alt = "PDF"/><img class = "pubicon notpresent" src = "/img/icons/video.svg" alt = "Video"/><img class = "pubicon notpresent" src = "/img/icons/slides.svg" alt = "Slides"/></span></td></tr>
+<tr class="r6"><td class="c1">12:30-2:00 </td><td class="c2"> Lunch (provided)</td></tr>
+<tr class="r7"><td class="c1">2:00-2:25 </td><td class="c2"> Brady Testa (Texas A&amp;M) <br /><a href="#talk4">On the Incentive Compatibility of Proof-of-Work-based Cryptocurrencies</a><span class = "iconbox"><img class = "pubicon notpresent" src = "/img/icons/pdf.svg" alt = "PDF"/><img class = "pubicon notpresent" src = "/img/icons/video.svg" alt = "Video"/><img class = "pubicon notpresent" src = "/img/icons/slides.svg" alt = "Slides"/></span></td></tr>
+<tr class="r8"><td class="c1">2:25-2:50 </td><td class="c2"> <a href="https://alinush.github.io/" target=&ldquo;blank&rdquo;>Alin Tomescu</a> (Aptos Labs) <br /><a href="#talk5">Chunky: Weighted PVSS and DKG for Field Elements</a><span class = "iconbox"><img class = "pubicon notpresent" src = "/img/icons/pdf.svg" alt = "PDF"/><img class = "pubicon notpresent" src = "/img/icons/video.svg" alt = "Video"/><img class = "pubicon notpresent" src = "/img/icons/slides.svg" alt = "Slides"/></span></td></tr>
+<tr class="r9"><td class="c1">2:50-3:20 </td><td class="c2"> Coffee</td></tr>
+<tr class="r10"><td class="c1">3:20-3:55 </td><td class="c2"> <a href="https://www.cs.utexas.edu/~jchamps/" target=&ldquo;blank&rdquo;>Jeff Champion</a> (UT Austin) <br /><a href="#talk6">Distributed Monotone-Policy Encryption for DNFs from Lattices</a><span class = "iconbox"><a href="https://eprint.iacr.org/2026/318.pdf" target=&ldquo;blank&rdquo;><img class = "pubicon" src = "/img/icons/pdf.svg" alt = "PDF"/></a><img class = "pubicon notpresent" src = "/img/icons/video.svg" alt = "Video"/><img class = "pubicon notpresent" src = "/img/icons/slides.svg" alt = "Slides"/></span></td></tr>
+<tr class="r11"><td class="c1">3:55-4:20 </td><td class="c2"> <a href="https://chuhanlu.github.io/" target=&ldquo;blank&rdquo;>Chuhan Lu</a> (Rice University) <br /><a href="#talk7">Quantum Pseudorandom Primitives from the Parallel Kac’s Walk</a><span class = "iconbox"><img class = "pubicon notpresent" src = "/img/icons/pdf.svg" alt = "PDF"/><img class = "pubicon notpresent" src = "/img/icons/video.svg" alt = "Video"/><img class = "pubicon notpresent" src = "/img/icons/slides.svg" alt = "Slides"/></span>
+</td></tr></table>
+<h2>Abstracts</h2>
+<p><a id = "talk1"></a>
+</p>
+<h3>Succinct Garbled Circuits with Low-Depth Garbling Algorithms<span class = "iconbox"><a href="https://eprint.iacr.org/2025/2308.pdf" target=&ldquo;blank&rdquo;><img class = "pubicon" src = "/img/icons/pdf.svg" alt = "PDF"/></a><img class = "pubicon notpresent" src = "/img/icons/video.svg" alt = "Video"/><img class = "pubicon notpresent" src = "/img/icons/slides.svg" alt = "Slides"/></span></h3>
+<p><a href="https://sites.google.com/view/george-lu/" target=&ldquo;blank&rdquo;>George Lu</a> (UT Austin) <br />
+</p>
+<p>We study the problem of constructing Boolean garbling schemes that are both
+succinct - with garbled circuit size significantly smaller than the original
+circuit - and have low-depth garbling algorithms, where the garbling process
+runs in parallel time logarithmic in the circuit size. Prior schemes achieve
+one but not the other, unless relying on indistinguishability obfuscation
+(iO), which is prohibitively inefficient, relies on a combination of multiple
+assumptions, and achieves only polynomial garbling depth poly(λ,log |C|).
+</p>
+<p>We resolve this tension by presenting the first garbling schemes that are both
+succinct and admit garbling algorithms in NC1, based only on standard group
+and lattice assumptions. Our main results include:
+</p>
+<ul>
+<li><p>One-bit-per-gate garbling with logarithmic garbling depth based on DDH or
+RLWE and the existence of a local PRG.
+</p>
+</li>
+<li><p>Succinct privacy-free garbling of size linear in the circuit depth D (and
+sublinear in the circuit size |C|), based on DDH or RLWE.
+</p>
+</li>
+<li><p>Reusable, fully succinct garbling with logarithmic garbling depth, based on
+decomposable LWE. The DDH-based one-bit-per-gate scheme has tunably small
+inverse polynomial correctness and privacy errors, which can be made
+negligible at the cost of increasing garbling depth to poly(λ).
+</p>
+</li>
+</ul>
+<p>As further extension, we also obtain the first attribute-based encryption
+schemes with succinct keys and low-depth key generation.
+</p>
+<p>At a conceptual level, our constructions are derived from a unified framework
+that subsumes all prior approaches to succinct garbling. It identifies the
+common source of high-depth garbling, and provides a general methodology for
+reducing garbling depth without sacrificing succinctness, applicable across
+different techniques and assumptions.
+</p>
+<p>Joint work with Hanjun Li and Hanjun Li
+</p>
+<p><hr>
+</p>
+<p><a id = "talk2"></a>
+</p>
+<h3>From Standards to Validation: Cryptography in Practice<span class = "iconbox"><img class = "pubicon notpresent" src = "/img/icons/pdf.svg" alt = "PDF"/><img class = "pubicon notpresent" src = "/img/icons/video.svg" alt = "Video"/><img class = "pubicon notpresent" src = "/img/icons/slides.svg" alt = "Slides"/></span></h3>
+<p>Yi Mao (atsec information security corporation) <br />
+</p>
+<p>This talk will begin with a brief introduction to atsec information security and
+one of its core business areas, cryptographic security testing. It will then
+provide an overview of the relevant U.S. NIST standards and their international
+counterparts, along with an explanation of the cryptographic module validation
+process and the broader ecosystem in which it operates.
+</p>
+<p>The goal of this presentation is to offer academic cryptographers a pragmatic
+perspective on how research results transition into industry practice through
+the NIST and ISO standardization processes. We hope to foster collaboration
+that bridges theory and practice and to inspire students interested in
+strengthening information security through cryptography to become the next
+generation of security professionals.
+</p>
+<p><b>Speaker Bio:</b> Yi Mao, Ph.D., CISSP, earned her Ph.D. in Mathematical Logic in 2003 and her
+M.S. in Computer Science in 2000 from the University of Texas at Austin. She
+received her B.A. in 1991 and M.A. in 1994 from Peking University in China.
+</p>
+<p>Dr. Mao is the CEO and Managing Director of atsec U.S.A., where she oversees
+business operations, including cryptographic security testing for compliance
+with FIPS 140 standards and Common Criteria (CC) evaluations. She works
+closely with atsec’s offices in Europe and Asia to ensure global coordination
+and technical alignment.
+</p>
+<p>A recognized expert in ISO/IEC standards, Dr. Mao actively contributes to
+ISO/IEC JTC 1/SC 27/WG 3, helping shape international standards such as
+ISO/IEC 19790 and 24759, which correspond to FIPS 140-3, as well as ISO/IEC
+15408 and 18045 for the Common Criteria framework.
+</p>
+<p>Dr. Mao is a frequent speaker at leading information security conferences and
+a strong advocate for rigorous security assurance through internationally
+recognized standards.
+</p>
+<p><hr>
+</p>
+<p><a id = "talk4"></a>
+</p>
+<h3>On the Incentive Compatibility of Proof-of-Work-based Cryptocurrencies<span class = "iconbox"><img class = "pubicon notpresent" src = "/img/icons/pdf.svg" alt = "PDF"/><img class = "pubicon notpresent" src = "/img/icons/video.svg" alt = "Video"/><img class = "pubicon notpresent" src = "/img/icons/slides.svg" alt = "Slides"/></span></h3>
+<p>Brady Testa (Texas A&amp;M) <br />
+</p>
+<p>Proof-of-work (PoW)-based blockchains operate by requiring that
+protocol participants (miners) who wish to extend the blockchain
+solve a moderately hard cryptographic puzzle. To ensure that these
+puzzles remain consistently difficult, cryptocurrencies enforce a
+difficulty adjustment mechanism. Since the security of PoW-based
+blockchains is dependent on the participation of miners, it is im-
+perative to analyze the economic incentives that drive them.
+</p>
+<p>We provide, to our knowledge, the first rigorous analysis of PoW-
+based blockchains in the dynamic participation (and variable PoW
+difficulty) setting which takes into account both a cryptographic-
+security formulation (namely, Universal Composability statements)
+and miners’ and attackers’ incentives. Our results utilize the Ratio-
+nal Protocol Design framework of Garay et al. [FOCS’13] to prove
+such economic robustness, and improve on previous works based
+on the same methodology [EUROCRYPT ’18, CRYPTO ’21] as fol-
+lows: (i) We consider the setting with dynamic participation and
+thus variable PoW difficulty; (ii) we address incentive compatibility
+while using a discounting function; and (iii) we consider price/cost
+fluctuations over time. We provide a characterization of cost, price
+and block reward parameters under which protocol participants
+are proven to be incentivized to mine.
+</p>
+<p>Finally, we apply our analysis to several real-world cryptocurren-
+cies over different periods that include a forking attack and drastic
+shifts in monetary policy.
+</p>
+<p>Joint work with Juan Garay, Yun Lu, Julien Prat and Vassilis
+Zikas
+</p>
+<p><hr>
+</p>
+<p><a id = "talk5"></a>
+</p>
+<h3>Chunky: Weighted PVSS and DKG for Field Elements<span class = "iconbox"><img class = "pubicon notpresent" src = "/img/icons/pdf.svg" alt = "PDF"/><img class = "pubicon notpresent" src = "/img/icons/video.svg" alt = "Video"/><img class = "pubicon notpresent" src = "/img/icons/slides.svg" alt = "Slides"/></span></h3>
+<p><a href="https://alinush.github.io/" target=&ldquo;blank&rdquo;>Alin Tomescu</a> (Aptos Labs) <br />
+</p>
+<p><hr>
+</p>
+<p><a id = "talk6"></a>
+</p>
+<h3>Distributed Monotone-Policy Encryption for DNFs from Lattices<span class = "iconbox"><a href="https://eprint.iacr.org/2026/318.pdf" target=&ldquo;blank&rdquo;><img class = "pubicon" src = "/img/icons/pdf.svg" alt = "PDF"/></a><img class = "pubicon notpresent" src = "/img/icons/video.svg" alt = "Video"/><img class = "pubicon notpresent" src = "/img/icons/slides.svg" alt = "Slides"/></span></h3>
+<p><a href="https://www.cs.utexas.edu/~jchamps/" target=&ldquo;blank&rdquo;>Jeff Champion</a> (UT Austin) <br />
+</p>
+<p>Distributed monotone-policy encryption augments public-key encryption with
+fine-grained decryption capabilities in a trustless manner. In this scheme,
+users independently generate a public/private key-pair and post their public
+key to a public-key directory. Thereafter, anyone can encrypt a message to a
+set of public keys together with an access policy. Any set of users that
+satisfies the access policy can decrypt the ciphertext while the message
+should remain computationally hidden to any unsatisfying set of users. The
+primary efficiency requirement is succinctness: namely, the size of the
+ciphertext should be sublinear (or polylogarithmic) in the description length
+of the policy. Distributed monotone-policy encryption directly generalizes
+recent trustless cryptographic notions like threshold encryption with silent
+setup and distributed broadcast encryption.
+</p>
+<p>In this work, we show how to construct distributed monotone-policy encryption
+for Boolean formulas in disjunctive normal form (DNF formulas) that supports
+an unbounded number of users. Security relies on the decomposed learning with
+errors (LWE) assumption, a simple and falsifiable lattice assumption, in the
+random oracle model. Previously, such a scheme was only known from plain
+witness encryption in the random oracle model. Our scheme has a transparent
+setup and the ciphertext size is poly(λ, log N), where N is the number of
+variables in the DNF formula.
+</p>
+<p>Joint work with David Wu
+</p>
+<p><hr>
+</p>
+<p><a id = "talk7"></a>
+</p>
+<h3>Quantum Pseudorandom Primitives from the Parallel Kac’s Walk<span class = "iconbox"><img class = "pubicon notpresent" src = "/img/icons/pdf.svg" alt = "PDF"/><img class = "pubicon notpresent" src = "/img/icons/video.svg" alt = "Video"/><img class = "pubicon notpresent" src = "/img/icons/slides.svg" alt = "Slides"/></span></h3>
+<p><a href="https://chuhanlu.github.io/" target=&ldquo;blank&rdquo;>Chuhan Lu</a> (Rice University) <br />
+</p>
+<p>Quantum pseudorandomness, introduced by Ji, Liu, and Song, studies quantum
+analogues of classical pseudorandom generators and pseudorandom functions.
+While pseudorandom states (PRSs) have been constructed under standard
+assumptions, obtaining secure pseudorandom unitaries (PRUs) was for a long
+time a central open challenge in the area.
+</p>
+<p>This talk presents a line of work based on the Parallel Kac’s Walk that
+narrows the gap between PRSs and PRUs. We first introduce Pseudorandom State
+Scramblers (PRSSs), an intermediate primitive that maps any pure state to a
+pseudorandom state. The construction builds on a parallel variant of Kac’s
+walk that exhibits exponentially faster mixing, allowing for an efficient
+realization of the primitive. The same construction further yields PRUs via a
+different proof technique, extending the framework beyond PRSSs.</p>
 <h2>Past Events</h2>
 <ul>
 <li><p><a href="events/6-UTAustin.html">April 2025 (UT Austin)</a>
