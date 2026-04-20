@@ -1,0 +1,257 @@
+
+body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+  color: #222;
+  padding-bottom: 2rem;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+/* ── Navbar ─────────────────────────────────────────────────── */
+
+.navbar {
+  border-bottom: 1px solid #ddd;
+  font-size: 0.92rem;
+}
+.navbar-brand {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: bold;
+  font-size: 1.15rem;
+  color: #333 !important;
+}
+.navbar-wrapper {
+  max-width: 900px;
+}
+.nav-link {
+  color: #2a7f7f !important;
+  padding-left: 0.85rem !important;
+  padding-right: 0.85rem !important;
+}
+.nav-link:hover {
+  color: #1d5c5c !important;
+}
+.nav-link.active {
+  color: #134040 !important;
+  font-weight: 600;
+  border-bottom: 2px solid #2a7f7f;
+}
+/* ── Content layout ─────────────────────────────────────────── */
+
+.content-wrapper {
+  max-width: 900px;
+  margin-top: 1.5rem;
+}
+
+/* ── Typography ─────────────────────────────────────────────── */
+
+h1, h2, h3 {
+  font-family: Georgia, "Times New Roman", serif;
+  color: #2a7f7f;
+  padding-bottom: 0.2em;
+  border-bottom: 1px solid #aaa;
+  margin-top: 1.4em;
+  margin-bottom: 0.4em;
+}
+h1 { font-size: 1.65em; }
+h2 { font-size: 1.25em; }
+h3 { font-size: 1.1em; border-bottom: none; }
+
+a { color: #1d5c5c; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+p { line-height: 1.45; margin-bottom: 0.8em; }
+
+ul { line-height: 1.45; }
+
+/* ── Page title ─────────────────────────────────────────────── */
+
+.page-title {
+  text-align: center;
+  font-size: 1.8em;
+  border-bottom: none;
+  margin-bottom: 0.8em;
+}
+
+/* ── Callout ────────────────────────────────────────────────── */
+
+.callout {
+  border-left: 3px solid #2a7f7f;
+  background: #f0f7f7;
+  padding: 0.7em 1em;
+  margin: 1em 0 1.2em;
+  border-radius: 0 4px 4px 0;
+  line-height: 1.5;
+}
+.callout p { margin-bottom: 0; }
+.callout p + p { margin-top: 0.5em; }
+
+/* ── Event cards ────────────────────────────────────────────── */
+
+.event-card {
+  border: 1px solid #dde3ec;
+  border-left: 4px solid #2a7f7f;
+  border-radius: 8px;
+  padding: 0;
+  margin-bottom: 1em;
+  cursor: pointer;
+}
+.event-card-header {
+  display: flex;
+  align-items: baseline;
+  gap: 1em;
+  padding: 0.8rem 1.1rem;
+  text-decoration: none;
+  color: inherit;
+  flex-wrap: nowrap;
+}
+.event-card-header:hover {
+  background: #f8f9fb;
+  text-decoration: none;
+  border-radius: 0 7px 7px 0;
+}
+.event-card-title {
+  font-family: Georgia, "Times New Roman", serif;
+  font-weight: bold;
+  color: #333;
+  font-size: 1.05rem;
+}
+.event-card-meta {
+  color: #666;
+  font-size: 0.9em;
+  white-space: nowrap;
+  margin-left: auto;
+}
+.event-card > .collapse,
+.event-card > .collapsing {
+  padding: 0 1.1rem 0.8rem;
+}
+.event-card h2 {
+  border-bottom: none;
+  margin-top: 0.5em;
+}
+
+/* ── Event photo ────────────────────────────────────────────── */
+
+.event-photo {
+  width: 100%;
+  border-radius: 4px;
+  margin-bottom: 1.5em;
+}
+
+/* ── Program table ──────────────────────────────────────────── */
+
+#program {
+  border-bottom: none;
+}
+.program-hint {
+  color: #888;
+  font-size: 0.88em;
+  margin-bottom: 0.6em;
+}
+
+.program-table {
+  width: 100%;
+  border-top: 1px solid #aaa;
+  border-bottom: 1px solid #aaa;
+  border-collapse: collapse;
+  margin-bottom: 1.5em;
+}
+.program-table td {
+  padding: 0.6em 0.8em;
+  border-top: 1px solid #dde3ec;
+  vertical-align: top;
+  line-height: 1.4;
+}
+.program-table tr:first-child td {
+  border-top: none;
+}
+.program-table .time-col {
+  white-space: nowrap;
+  font-variant-numeric: tabular-nums;
+  color: #555;
+  min-width: 90px;
+  width: 100px;
+}
+.program-table .break-row td {
+  background: #f8f9fa;
+  color: #666;
+  font-style: italic;
+}
+.affiliation {
+  color: #666;
+}
+
+/* ── Icons ──────────────────────────────────────────────────── */
+
+.iconbox {
+  float: right;
+  white-space: nowrap;
+  min-width: 70px;
+  text-align: right;
+}
+img.pubicon {
+  vertical-align: middle;
+  height: 18px;
+  padding-left: 2px;
+  padding-right: 2px;
+}
+img.notpresent {
+  visibility: hidden;
+}
+.iconbox a {
+  opacity: 0.65;
+  transition: opacity 0.15s;
+}
+.iconbox a:hover {
+  opacity: 1;
+  text-decoration: none;
+}
+
+/* ── Inline abstracts (collapsible) ─────────────────────────── */
+
+.abstract-card {
+  margin-top: 0.5em;
+  padding: 0.5em 0.8em;
+  line-height: 1.4;
+  text-align: justify;
+  font-size: 0.88em;
+}
+.abstract-card p {
+  margin-bottom: 0.6em;
+}
+.abstract-card p:last-child {
+  margin-bottom: 0;
+}
+.abstract-card ul {
+  margin-top: 0.1em;
+  margin-bottom: 0.5em;
+}
+
+/* ── Responsive ─────────────────────────────────────────────── */
+
+@media (max-width: 768px) {
+  .program-table .time-col {
+    min-width: 70px;
+    width: auto;
+    font-size: 0.85em;
+  }
+  .iconbox {
+    float: none;
+    display: block;
+    text-align: left;
+    margin-top: 0.3em;
+  }
+  .event-card-header {
+    flex-wrap: wrap;
+    gap: 0.2em 1em;
+  }
+  .event-card-meta {
+    margin-left: 0;
+  }
+}
+
+@media print {
+  .navbar { display: none; }
+}
