@@ -28,7 +28,6 @@ MathJax.Hub.Config({ CommonHTML: { matchFontHeight: false, scale: 115 } });
 
 <nav class="navbar navbar-expand-lg navbar-light bg-white">
   <div class="container navbar-wrapper">
-    <a class="navbar-brand" href="/index.html">Texas Crypto Day</a>
     <button class="navbar-toggler" type="button"
             data-bs-toggle="collapse" data-bs-target="#mainNav"
             aria-controls="mainNav" aria-expanded="false" aria-label="Toggle navigation">
@@ -50,6 +49,149 @@ MathJax.Hub.Config({ CommonHTML: { matchFontHeight: false, scale: 115 } });
 <div class="container content-wrapper">
 <h1 class="page-title">Past Events</h1>
 <p class="program-hint">Click on an event to view the program.</p>
+<div class="event-card" id="7-TAMU">
+  <a class="event-card-header" data-bs-toggle="collapse" href="#event-7-TAMU">
+    <span class="event-card-title">7th Texas Crypto Day</span>
+    <span class="event-card-meta">Texas A&amp;M &middot; April 24, 2026</span>
+  </a>
+  <div class="collapse" id="event-7-TAMU">
+<h2 id="7-TAMU-program">Program</h2>
+<p class="program-hint">Click on a talk title to see the abstract.</p>
+<div class="table-responsive">
+<table class="program-table">
+<tbody>
+<tr class="break-row">
+  <td class="time-col">10:00-10:30</td>
+  <td>Coffee</td>
+</tr>
+<tr>
+  <td class="time-col">10:30-10:55</td>
+  <td>
+    <strong><a href="https://sites.google.com/view/george-lu/">George Lu</a></strong> <span class="affiliation">(UT Austin)</span><br>
+    <a data-bs-toggle="collapse" href="#7-TAMU-talk1">Succinct Garbled Circuits with Low-Depth Garbling Algorithms</a> <span class="iconbox"><a href="https://eprint.iacr.org/2025/2308.pdf"><img class="pubicon" src="/img/icons/pdf.svg" alt="PDF"></a><img class="pubicon notpresent" src="/img/icons/video.svg" alt="Video"><img class="pubicon notpresent" src="/img/icons/slides.svg" alt="Slides"></span>
+    <div class="collapse" id="7-TAMU-talk1">
+      <div class="card card-body abstract-card">
+        <p>We study the problem of constructing Boolean garbling schemes that are both succinct - with garbled circuit size significantly smaller than the original circuit - and have low-depth garbling algorithms, where the garbling process runs in parallel time logarithmic in the circuit size. Prior schemes achieve one but not the other, unless relying on indistinguishability obfuscation (\(iO\)), which is prohibitively inefficient, relies on a combination of multiple assumptions, and achieves only polynomial garbling depth \(\mathsf{poly}(\lambda, \log |C|)\).</p>
+<p>We resolve this tension by presenting the first garbling schemes that are both succinct and admit garbling algorithms in NC1, based only on standard group and lattice assumptions. Our main results include:</p>
+<ul>
+<li>One-bit-per-gate garbling with logarithmic garbling depth based on DDH or RLWE and the existence of a local PRG.</li>
+<li>Succinct privacy-free garbling of size linear in the circuit depth \(D\) (and sublinear in the circuit size \(|C|\)), based on DDH or RLWE.</li>
+<li>Reusable, fully succinct garbling with logarithmic garbling depth, based on decomposable LWE. The DDH-based one-bit-per-gate scheme has tunably small inverse polynomial correctness and privacy errors, which can be made negligible at the cost of increasing garbling depth to \(\mathsf{poly}(\lambda)\).</li>
+</ul>
+<p>As further extension, we also obtain the first attribute-based encryption schemes with succinct keys and low-depth key generation.</p>
+<p>At a conceptual level, our constructions are derived from a unified framework that subsumes all prior approaches to succinct garbling. It identifies the common source of high-depth garbling, and provides a general methodology for reducing garbling depth without sacrificing succinctness, applicable across different techniques and assumptions.</p>
+<p>Joint work with Hanjun Li and Huijia Lin.</p>
+      </div>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td class="time-col">10:55-11:10</td>
+  <td>
+    <strong>Yi Mao</strong> <span class="affiliation">(atsec information security corporation)</span><br>
+    <a data-bs-toggle="collapse" href="#7-TAMU-talk2">From Standards to Validation: Cryptography in Practice</a> <span class="iconbox"><img class="pubicon notpresent" src="/img/icons/pdf.svg" alt="PDF"><img class="pubicon notpresent" src="/img/icons/video.svg" alt="Video"><img class="pubicon notpresent" src="/img/icons/slides.svg" alt="Slides"></span>
+    <div class="collapse" id="7-TAMU-talk2">
+      <div class="card card-body abstract-card">
+        <p>This talk will begin with a brief introduction to atsec information security and one of its core business areas, cryptographic security testing. It will then provide an overview of the relevant U.S. NIST standards and their international counterparts, along with an explanation of the cryptographic module validation process and the broader ecosystem in which it operates.</p>
+<p>The goal of this presentation is to offer academic cryptographers a pragmatic perspective on how research results transition into industry practice through the NIST and ISO standardization processes. We hope to foster collaboration that bridges theory and practice and to inspire students interested in strengthening information security through cryptography to become the next generation of security professionals.</p>
+<p><strong>Speaker Bio:</strong> Yi Mao, Ph.D., CISSP, earned her Ph.D. in Mathematical Logic in 2003 and her M.S. in Computer Science in 2000 from the University of Texas at Austin. She received her B.A. in 1991 and M.A. in 1994 from Peking University in China.</p>
+<p>Dr. Mao is the CEO and Managing Director of atsec U.S.A., where she oversees business operations, including cryptographic security testing for compliance with FIPS 140 standards and Common Criteria (CC) evaluations. She works closely with atsec’s offices in Europe and Asia to ensure global coordination and technical alignment.</p>
+<p>A recognized expert in ISO/IEC standards, Dr. Mao actively contributes to ISO/IEC JTC 1/SC 27/WG 3, helping shape international standards such as ISO/IEC 19790 and 24759, which correspond to FIPS 140-3, as well as ISO/IEC 15408 and 18045 for the Common Criteria framework.</p>
+<p>Dr. Mao is a frequent speaker at leading information security conferences and a strong advocate for rigorous security assurance through internationally recognized standards.</p>
+      </div>
+    </div>
+  </td>
+</tr>
+<tr class="break-row">
+  <td class="time-col">11:10-11:30</td>
+  <td>Coffee</td>
+</tr>
+<tr>
+  <td class="time-col">11:30-12:30</td>
+  <td>
+    <strong><a href="https://yuvali.cswp.cs.technion.ac.il/">Yuval Ishai</a></strong> <span class="affiliation">(Technion and AWS)</span><br>
+    <strong>Invited Talk:</strong> <a data-bs-toggle="collapse" href="#7-TAMU-talk3">Computing on Encrypted Data via Secret Dual Codes</a> <span class="iconbox"><img class="pubicon notpresent" src="/img/icons/pdf.svg" alt="PDF"><img class="pubicon notpresent" src="/img/icons/video.svg" alt="Video"><img class="pubicon notpresent" src="/img/icons/slides.svg" alt="Slides"></span>
+    <div class="collapse" id="7-TAMU-talk3">
+      <div class="card card-body abstract-card">
+        <p>We revisit the question of computing on encrypted data, in the following secret-key setting. A client uploads an encryption of a large input \(X\) to an untrusted server and then wishes to make an unbounded number of queries \(q(X)\) while hiding \(q\) and \(X\) from the server, using only its secret key. How efficiently can this be done and under what assumptions?</p>
+<p>We present efficient solutions for useful special cases, including matrix-vector multiplication and private information retrieval (PIR). These solutions rely on either the standard Learning Parity with Noise assumption, in a parameter regime not known to imply public-key encryption, or new assumptions related to the hardness of learning a secret linear subspace from noisy samples. The latter assumptions yield efficiency features that no prior approach meets, including a vanishing computational overhead on the server side.</p>
+<p>Our core idea, inspired by prior works on PIR with preprocessing, is to encode the input \(X\) and the queries \(q\) using a pair of secret dual codes, while avoiding linear algebra attacks by adding noise.</p>
+<p>Based on joint works with Fabrice Benhamouda, Caicai Chen, Shai Halevi, Hugo Krawczyk, Tamer Mour, Tal Rabin, and Alon Rosen.</p>
+      </div>
+    </div>
+  </td>
+</tr>
+<tr class="break-row">
+  <td class="time-col">12:30-2:00</td>
+  <td>Lunch (on your own)</td>
+</tr>
+<tr>
+  <td class="time-col">2:00-2:25</td>
+  <td>
+    <strong>Brady Testa</strong> <span class="affiliation">(Texas A&amp;M)</span><br>
+    <a data-bs-toggle="collapse" href="#7-TAMU-talk4">On the Incentive Compatibility of Proof-of-Work-based Cryptocurrencies</a> <span class="iconbox"><img class="pubicon notpresent" src="/img/icons/pdf.svg" alt="PDF"><img class="pubicon notpresent" src="/img/icons/video.svg" alt="Video"><img class="pubicon notpresent" src="/img/icons/slides.svg" alt="Slides"></span>
+    <div class="collapse" id="7-TAMU-talk4">
+      <div class="card card-body abstract-card">
+        <p>Proof-of-work (PoW)-based blockchains operate by requiring that protocol participants (miners) who wish to extend the blockchain solve a moderately hard cryptographic puzzle. To ensure that these puzzles remain consistently difficult, cryptocurrencies enforce a difficulty adjustment mechanism. Since the security of PoW-based blockchains is dependent on the participation of miners, it is imperative to analyze the economic incentives that drive them.</p>
+<p>We provide, to our knowledge, the first rigorous analysis of PoW- based blockchains in the dynamic participation (and variable PoW difficulty) setting which takes into account both a cryptographic- security formulation (namely, Universal Composability statements) and miners’ and attackers’ incentives. Our results utilize the Rational Protocol Design framework of Garay et al. [FOCS’13] to prove such economic robustness, and improve on previous works based on the same methodology [EUROCRYPT ’18, CRYPTO ’21] as follows: (i) We consider the setting with dynamic participation and thus variable PoW difficulty; (ii) we address incentive compatibility while using a discounting function; and (iii) we consider price/cost fluctuations over time. We provide a characterization of cost, price and block reward parameters under which protocol participants are proven to be incentivized to mine.</p>
+<p>Finally, we apply our analysis to several real-world cryptocurrencies over different periods that include a forking attack and drastic shifts in monetary policy.</p>
+<p>Joint work with Juan Garay, Yun Lu, Julien Prat and Vassilis Zikas.</p>
+      </div>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td class="time-col">2:25-2:50</td>
+  <td>
+    <strong><a href="https://alinush.github.io/">Alin Tomescu</a></strong> <span class="affiliation">(Aptos Labs)</span><br>
+    <a data-bs-toggle="collapse" href="#7-TAMU-talk5">Chunky: Weighted PVSS for Field Elements with Efficient Batched Range Proofs</a> <span class="iconbox"><a href="https://alinush.github.io/chunky"><img class="pubicon" src="/img/icons/pdf.svg" alt="PDF"></a><img class="pubicon notpresent" src="/img/icons/video.svg" alt="Video"><img class="pubicon notpresent" src="/img/icons/slides.svg" alt="Slides"></span>
+    <div class="collapse" id="7-TAMU-talk5">
+      <div class="card card-body abstract-card">
+        <p>We present Chunky, a weighted publicly-verifiable secret sharing (PVSS) scheme for field elements, designed for weighted distributed key generation (DKG) in proof-of-stake blockchains. Chunky secret-shares a field element by splitting each share into small, ElGamal-encrypted chunks, and proving that all chunks are in range using a single batched range proof.</p>
+<p>At the heart of our construction is DeKART, a new batched zero-knowledge range proof built from KZG commitments. DeKART&#x27;s key feature is that its proof size and verifier time depend only on the chunk bit-width \(\ell\) and are independent of the number of chunks being range-checked, making it an ideal building block for PVSS schemes with many shares and thus many chunks. Importantly, DeKART&#x27;s prover is very fast, dominated by 6 FFTs and a \(\mathbb{G}_1\) multi-scalar multiplication linear in the number of chunks.</p>
+<p>Chunky also supports a useful new notion of subtranscript aggregation, which helps bootstrap a low-interaction DKG protocol. Specifically, given \(n\) verified transcripts from multiple dealers, they can be combined into a succinct, on-chain, DKG subtranscript of only ~81 KiB in size, regardless of how many dealers contributed. This allows each player in the DKG protocol to efficiently obtain their share by only decrypting their chunks from one (sub)transcript, rather than \(n\).</p>
+<p>We benchmark a production-grade implementation of Chunky in a 129-out-of-219 total weight setting, with 136 players. With 32-bit chunks, on an Apple M4 Max laptop, dealing takes ~373 ms, verification takes ~63 ms, and the transcript is only ~259 KiB. This efficiency recently emboldened us to deploy a Chunky-based DKG to bootstrap an efficient batched threshold decryption scheme on the Aptos developer network.</p>
+<p>Joint work with Dan Boneh, Trisha Datta, Rex Fernando, Kamilla Nazirkhanova, and Wicher Malten.</p>
+      </div>
+    </div>
+  </td>
+</tr>
+<tr class="break-row">
+  <td class="time-col">2:50-3:20</td>
+  <td>Coffee</td>
+</tr>
+<tr>
+  <td class="time-col">3:20-3:45</td>
+  <td>
+    <strong><a href="https://www.cs.utexas.edu/~jchamps/">Jeff Champion</a></strong> <span class="affiliation">(UT Austin)</span><br>
+    <a data-bs-toggle="collapse" href="#7-TAMU-talk6">Distributed Monotone-Policy Encryption for DNFs from Lattices</a> <span class="iconbox"><a href="https://eprint.iacr.org/2026/318.pdf"><img class="pubicon" src="/img/icons/pdf.svg" alt="PDF"></a><img class="pubicon notpresent" src="/img/icons/video.svg" alt="Video"><img class="pubicon notpresent" src="/img/icons/slides.svg" alt="Slides"></span>
+    <div class="collapse" id="7-TAMU-talk6">
+      <div class="card card-body abstract-card">
+        <p>Distributed monotone-policy encryption augments public-key encryption with fine-grained decryption capabilities in a trustless manner. In this scheme, users independently generate a public/private key-pair and post their public key to a public-key directory. Thereafter, anyone can encrypt a message to a set of public keys together with an access policy. Any set of users that satisfies the access policy can decrypt the ciphertext while the message should remain computationally hidden to any unsatisfying set of users. The primary efficiency requirement is succinctness: namely, the size of the ciphertext should be sublinear (or polylogarithmic) in the description length of the policy. Distributed monotone-policy encryption directly generalizes recent trustless cryptographic notions like threshold encryption with silent setup and distributed broadcast encryption.</p>
+<p>In this work, we show how to construct distributed monotone-policy encryption for Boolean formulas in disjunctive normal form (DNF formulas) that supports an unbounded number of users. Security relies on the decomposed learning with errors (LWE) assumption, a simple and falsifiable lattice assumption, in the random oracle model. Previously, such a scheme was only known from plain witness encryption in the random oracle model. Our scheme has a transparent setup and the ciphertext size is \(\mathsf{poly}(\lambda, \log N)\), where \(N\) is the number of variables in the DNF formula.</p>
+<p>Joint work with David Wu.</p>
+      </div>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td class="time-col">3:45-4:10</td>
+  <td>
+    <strong><a href="https://chuhanlu.github.io/">Chuhan Lu</a></strong> <span class="affiliation">(Rice University)</span><br>
+    <a data-bs-toggle="collapse" href="#7-TAMU-talk7">Quantum Pseudorandom Primitives from the Parallel Kac’s Walk</a> <span class="iconbox"><img class="pubicon notpresent" src="/img/icons/pdf.svg" alt="PDF"><img class="pubicon notpresent" src="/img/icons/video.svg" alt="Video"><img class="pubicon notpresent" src="/img/icons/slides.svg" alt="Slides"></span>
+    <div class="collapse" id="7-TAMU-talk7">
+      <div class="card card-body abstract-card">
+        <p>Quantum pseudorandomness, introduced by Ji, Liu, and Song, studies quantum analogues of classical pseudorandom generators and pseudorandom functions. While pseudorandom states (PRSs) have been constructed under standard assumptions, obtaining secure pseudorandom unitaries (PRUs) was for a long time a central open challenge in the area.</p>
+<p>This talk presents a line of work based on the Parallel Kac’s Walk that narrows the gap between PRSs and PRUs. We first introduce Pseudorandom State Scramblers (PRSSs), an intermediate primitive that maps any pure state to a pseudorandom state. The construction builds on a parallel variant of Kac’s walk that exhibits exponentially faster mixing, allowing for an efficient realization of the primitive. The same construction further yields PRUs via a different proof technique, extending the framework beyond PRSSs.</p>
+      </div>
+    </div>
+  </td>
+</tr>
+</tbody>
+</table>
+</div>
+  </div>
+</div>
 <div class="event-card" id="6-UTAustin">
   <a class="event-card-header" data-bs-toggle="collapse" href="#event-6-UTAustin">
     <span class="event-card-title">6th Texas Crypto Day</span>
@@ -288,7 +430,7 @@ MathJax.Hub.Config({ CommonHTML: { matchFontHeight: false, scale: 115 } });
 <div class="event-card" id="4-TAMU">
   <a class="event-card-header" data-bs-toggle="collapse" href="#event-4-TAMU">
     <span class="event-card-title">4th Texas Crypto Day</span>
-    <span class="event-card-meta">Texas A&amp;M University &middot; April 26, 2024</span>
+    <span class="event-card-meta">Texas A&amp;M &middot; April 26, 2024</span>
   </a>
   <div class="collapse" id="event-4-TAMU">
     <a href="/img/4-TAMU.jpg"><img src="/img/4-TAMU.jpg" class="event-photo" alt="Texas Crypto Day"></a>
@@ -615,7 +757,7 @@ MathJax.Hub.Config({ CommonHTML: { matchFontHeight: false, scale: 115 } });
 <div class="event-card" id="1-TAMU">
   <a class="event-card-header" data-bs-toggle="collapse" href="#event-1-TAMU">
     <span class="event-card-title">1st Texas Crypto Day</span>
-    <span class="event-card-meta">Texas A&amp;M University &middot; December 2, 2022</span>
+    <span class="event-card-meta">Texas A&amp;M &middot; December 2, 2022</span>
   </a>
   <div class="collapse" id="event-1-TAMU">
     <a href="/img/1-TAMU.jpg"><img src="/img/1-TAMU.jpg" class="event-photo" alt="Texas Crypto Day"></a>
