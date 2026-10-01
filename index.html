@@ -58,9 +58,104 @@ MathJax.Hub.Config({ CommonHTML: { matchFontHeight: false, scale: 115 } });
 <p><strong>Former organizers:</strong> <a href="https://zhangyp.web.illinois.edu/">Yupeng Zhang</a></p>
 <h2>Upcoming Event</h2>
 <div class="callout">
-<p>The next Texas Crypto Day will be held at UT Austin on Friday, October 23, 2026. More information will be announced as we get closer to the event.</p>
+<p>The next Texas Crypto Day will be held at UT Austin on Friday, October 23, 2026.</p>
+<p><strong>Location:</strong> <a href="https://www.google.com/maps/search/?api=1&amp;query=William+C.+Powers%2C+Jr.+Student+Activity+Center%2C+2201+Speedway%2C+Austin%2C+TX+78712">WCP 3.114</a> (William C. Powers Student Activity Center).</p>
+<p><strong>Parking:</strong> The nearest visitor parking is the <a href="https://www.google.com/maps/search/?api=1&amp;query=Brazos+Garage%2C+210+E+Martin+Luther+King+Jr+Blvd%2C+Austin%2C+TX">Brazos Garage (BRG)</a>. The <a href="https://www.google.com/maps/search/?api=1&amp;query=San+Jacinto+Garage%2C+2401+San+Jacinto+Blvd%2C+Austin%2C+TX">San Jacinto Garage (SJG)</a> is another nearby option. At either garage, take a ticket when you enter and pay at a pay station before you leave.</p>
 </div>
-
+<h2 id="program">Program</h2>
+<p class="program-hint">Click on a talk title to see the abstract.</p>
+<div class="table-responsive">
+<table class="program-table">
+<tbody>
+<tr class="break-row">
+  <td class="time-col">10:00-10:30</td>
+  <td>Coffee</td>
+</tr>
+<tr>
+  <td class="time-col">10:30-11:30</td>
+  <td>
+    <strong><a href="https://pages.cs.wisc.edu/~rishab/">Rishab Goyal</a></strong> <span class="affiliation">(University of Wisconsin-Madison)</span>
+    <div class="talk-title"><span><strong>Invited Talk</strong></span> <span class="iconbox"><img class="pubicon notpresent" src="/img/icons/pdf.svg" alt="PDF"><img class="pubicon notpresent" src="/img/icons/video.svg" alt="Video"><img class="pubicon notpresent" src="/img/icons/slides.svg" alt="Slides"></span></div>
+  </td>
+</tr>
+<tr class="break-row">
+  <td class="time-col">11:30-11:50</td>
+  <td>Coffee</td>
+</tr>
+<tr>
+  <td class="time-col">11:50-12:15</td>
+  <td>
+    <strong><a href="https://sites.google.com/view/shafiknassar/bio">Shafik Nassar</a></strong> <span class="affiliation">(UT Austin)</span>
+    <div class="talk-title"><a class="abstract-toggle collapsed" data-bs-toggle="collapse" href="#talk2" role="button" aria-expanded="false" aria-controls="talk2">Obfuscating Non-Evasive Programs: Making Witness Encryption Positional</a> <span class="iconbox"><a href="https://eprint.iacr.org/2026/1932.pdf"><img class="pubicon" src="/img/icons/pdf.svg" alt="PDF"></a><img class="pubicon notpresent" src="/img/icons/video.svg" alt="Video"><img class="pubicon notpresent" src="/img/icons/slides.svg" alt="Slides"></span></div>
+    <div class="collapse" id="talk2">
+      <div class="card card-body abstract-card">
+        <p>Indistinguishability obfuscation (\(i\mathcal{O}\)) is a powerful cryptographic tool that enables many cryptographic capabilities. Due to its expressivity, constructing \(i\mathcal{O}\) is challenging, and existing constructions based on well-founded assumptions all require multiple algebraic assumptions, including an assumption on bilinear groups. If we consider post-quantum constructions, existing candidates all rely on new heuristic assumptions. Due to the challenges in realizing \(i\mathcal{O}\), a parallel line of work has aimed to build obfuscation for restricted classes of functionalities, such as point functions, compute-and-compare programs, and most broadly, null circuits from weaker assumptions. Thus far, these techniques have all been limited to supporting evasive programs (i.e., programs where it is difficult for an evaluator to find an input where the program’s output is not \(\bot\)).</p>
+<p>In this talk, we introduce a new notion called cutoff-\(i\mathcal{O}\). In cutoff-\(i\mathcal{O}\), we can obfuscate a circuit \(C\) together with a secret cutoff \(t\). Then, given an input \((w, i)\), the obfuscated program outputs \(C(w, i)\) if \(i > t\) and \(\bot\) otherwise. Security essentially stipulates that the obfuscated program should hide the cutoff \(t\). Cutoff-\(i\mathcal{O}\) is an example of obfuscation for a non-evasive function class and implies notions like positional witness encryption, which was previously only known from \(i\mathcal{O}\). Our main result is showing how to construct cutoff-\(i\mathcal{O}\) from witness encryption and the learning with errors (LWE) assumption. Thus, our approach shows how to lift an obfuscation scheme for an evasive function class (e.g., witness encryption, and more broadly, null-\(i\mathcal{O}\)) to an obfuscation scheme for a non-evasive function class.</p>
+<p>Joint work with Brent Waters and David Wu.</p>
+      </div>
+    </div>
+  </td>
+</tr>
+<tr class="break-row">
+  <td class="time-col">12:15-2:00</td>
+  <td>Lunch (on your own)</td>
+</tr>
+<tr>
+  <td class="time-col">2:00-2:25</td>
+  <td>
+    <strong>Tzu-Shen Wang</strong> <span class="affiliation">(Texas A&amp;M)</span>
+    <div class="talk-title"><a class="abstract-toggle collapsed" data-bs-toggle="collapse" href="#talk3" role="button" aria-expanded="false" aria-controls="talk3">Fast and Private Distributed MIS</a> <span class="iconbox"><img class="pubicon notpresent" src="/img/icons/pdf.svg" alt="PDF"><img class="pubicon notpresent" src="/img/icons/video.svg" alt="Video"><img class="pubicon notpresent" src="/img/icons/slides.svg" alt="Slides"></span></div>
+    <div class="collapse" id="talk3">
+      <div class="card card-body abstract-card">
+        <p>We study distributed network algorithms that guarantee privacy. We focus on the Maximal Independent Set (MIS) problem, one of the fundamental problems in the area. For the distributed MIS problem, each node starts with only local knowledge—i.e., its own ID, degree, and possibly the number of nodes \(n\)—and the goal is for each node to know whether it belongs to the MIS. All known distributed MIS algorithms, including Luby’s classical algorithm [SICOMP 1986], do not ensure privacy in the sense that nodes end up with more knowledge than their initial local knowledge and their final MIS status. In particular, upon completion of Luby’s algorithm, a node learns the MIS status of all of its neighbors and possibly information about the network’s (local) topology.</p>
+<p>In this work, we introduce the notion of Local Privacy for distributed network algorithms, whereby each node learns nothing about its neighbors or the rest of the network, except for what is implied by its local initial knowledge and its own output. A main question driving this work is whether one can design a locally private distributed algorithm for MIS. We note that the recent significant works on distributed secure (private) network algorithms (e.g., [Parter and Yogev, SODA 2019; Parter, FOCS 2023; Gelles, Komargodski, and Parter, STOC 2026]) assume that nodes have (initial) knowledge of the entire topology and do not guarantee local privacy for problems such as MIS that depend on the topology.</p>
+<p>Our main result is a locally private distributed MIS algorithm, which guarantees that each node learns only its own MIS status and nothing else, except for what is implied by its initial knowledge and its own status, at the expense of a slight running-time slowdown with respect to Luby’s. We assume that each node is honest-but-curious (i.e., no actively malicious behavior), is computationally bounded, and does not collude with any other nodes. Our algorithm runs in \(O(\mathrm{polylog}(n))\) rounds in the LOCAL model of computation. While we focus on MIS, our privacy-preserving techniques are generic and can be extended to design fast and locally private distributed algorithms for other graph problems.</p>
+<p>Joint work with Fabien Dufoulon, Juan Garay, Connor Neibert, Gopal Pandurangan, Peter Robinson, and Michele Scquizzato.</p>
+      </div>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td class="time-col">2:25-2:50</td>
+  <td>
+    <strong><a href="https://chuhanlu.github.io/">Chuhan Lu</a></strong> <span class="affiliation">(Rice University)</span>
+  </td>
+</tr>
+<tr class="break-row">
+  <td class="time-col">2:50-3:10</td>
+  <td>Coffee</td>
+</tr>
+<tr>
+  <td class="time-col">3:10-3:35</td>
+  <td>
+    <strong><a href="https://ab271202.github.io/">Anish Banerjee</a></strong> <span class="affiliation">(UT Austin)</span>
+    <div class="talk-title"><a class="abstract-toggle collapsed" data-bs-toggle="collapse" href="#talk5" role="button" aria-expanded="false" aria-controls="talk5">From NIZK Arguments to Zaps, Generically</a> <span class="iconbox"><a href="https://eprint.iacr.org/2026/886.pdf"><img class="pubicon" src="/img/icons/pdf.svg" alt="PDF"></a><img class="pubicon notpresent" src="/img/icons/video.svg" alt="Video"><img class="pubicon notpresent" src="/img/icons/slides.svg" alt="Slides"></span></div>
+    <div class="collapse" id="talk5">
+      <div class="card card-body abstract-card">
+        <p>Dwork and Naor (FOCS 2000) showed a generic transformation to construct a ZAP (a two-round public-coin witness-indistinguishable proof) from any non-interactive zero-knowledge (NIZK) proof with statistical soundness in the common random string model. In recent years, a number of works have shown how to construct NIZK arguments in the common random string model from a broad range of assumptions including decisional Diffie-Hellman (DDH), learning with errors (LWE), or combinations of multiple assumptions. While a number of previous works have developed specialized tools to build ZAPs using these same assumptions (through a non-trivial adaptation of the underlying NIZK), a natural question is whether we can generically obtain a ZAP from these NIZK arguments à la Dwork-Naor.</p>
+<p>In this work, we introduce the notion of a sometimes-constricting generator and show how to use it to generically upgrade any computational (resp., statistical) NIZK argument in the common random string model into a computational (resp., statistical) ZAP argument. We then show how to build sometimes-constricting generators from either the DDH assumption (over pairing-free groups) or the LWE assumption. Our transformation immediately allows us to recover constructions of ZAPs from assumptions like DDH or LWE, as well as enables new constructions from different combinations of cryptographic assumptions with properties that were not previously attainable. More broadly, our compiler provides a general mechanism to convert any future NIZK construction in the common random string model into a ZAP.</p>
+<p>Joint work with Brent Waters and David Wu.</p>
+      </div>
+    </div>
+  </td>
+</tr>
+<tr>
+  <td class="time-col">3:35-4:00</td>
+  <td>
+    <strong><a href="https://personal.utdallas.edu/~Yvo.Desmedt/">Yvo Desmedt</a></strong> <span class="affiliation">(UT Dallas)</span>
+    <div class="talk-title"><a class="abstract-toggle collapsed" data-bs-toggle="collapse" href="#talk6" role="button" aria-expanded="false" aria-controls="talk6">Fully Private MPC, Or, Which Function Should Be Computed?</a> <span class="iconbox"><img class="pubicon notpresent" src="/img/icons/pdf.svg" alt="PDF"><img class="pubicon notpresent" src="/img/icons/video.svg" alt="Video"><img class="pubicon notpresent" src="/img/icons/slides.svg" alt="Slides"></span></div>
+    <div class="collapse" id="talk6">
+      <div class="card card-body abstract-card">
+        <p>Forty years of theory has refined how the function \(f\) is computed; remarkably little has been said about how \(f\) comes to be agreed upon in the first place. We argue that this out-of-band step is not incidental: it is the missing security primitive.</p>
+<p>We illustrate our claim that: in real interactions parties do not arrive with a single function in mind. Each party carries a <strong>family</strong> of <strong>partial</strong> functions they would be willing to compute, ranked by preferences that are themselves <strong>relative</strong>, depending on who the counterparty is, and on the context of the interaction. We propose a fully-private solution to address the issue and explain why Private Set Intersection should <strong>not</strong> be used.</p>
+<p>Joint work with Arash Shaghaghi. To appear at the New Security Paradigms Workshop 2026.</p>
+      </div>
+    </div>
+  </td>
+</tr>
+</tbody>
+</table>
+</div>
 <h2>Related Events</h2>
 <ul>
 <li><a href="https://bacrypto.github.io/">Bay Area Crypto Day</a></li>
