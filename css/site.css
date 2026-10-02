@@ -13,7 +13,7 @@ html {
   font-size: 0.92rem;
 }
 .navbar-brand {
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: Literata, Georgia, serif;
   font-weight: bold;
   font-size: 1.15rem;
   color: #333 !important;
@@ -41,7 +41,7 @@ html {
 }
 
 h1, h2, h3 {
-  font-family: Georgia, "Times New Roman", serif;
+  font-family: Literata, Georgia, serif;
   color: #2a7f7f;
   padding-bottom: 0.2em;
   border-bottom: 1px solid #aaa;
@@ -83,7 +83,6 @@ ul { line-height: 1.45; }
   border-radius: 8px;
   padding: 0;
   margin-bottom: 1em;
-  cursor: pointer;
 }
 .event-card-header {
   display: flex;
@@ -100,10 +99,11 @@ ul { line-height: 1.45; }
   border-radius: 0 7px 7px 0;
 }
 .event-card-title {
-  font-family: Georgia, "Times New Roman", serif;
-  font-weight: bold;
+  font-family: Literata, Georgia, serif;
+  font-weight: 600;
   color: #333;
   font-size: 1.05rem;
+  font-variant-numeric: lining-nums;
 }
 .event-card-meta {
   color: #666;
@@ -204,7 +204,8 @@ img.notpresent {
   padding-left: 1.05em;
   text-indent: -1.05em;
 }
-.abstract-toggle::before {
+.abstract-toggle::before,
+.event-card-title::before {
   content: "";
   display: inline-block;
   width: 0.75em;
@@ -217,8 +218,18 @@ img.notpresent {
   transform: rotate(90deg);
   transition: transform 0.15s ease;
 }
-.abstract-toggle.collapsed::before {
+.abstract-toggle.collapsed::before,
+.event-card-header.collapsed .event-card-title::before {
   transform: none;
+}
+.event-card-title::before {
+  width: 0.95em;
+  height: 0.95em;
+  margin-right: 0.25em;
+  vertical-align: -0.13em;
+  color: #2a7f7f;
+  -webkit-mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M5 3.2 11.4 8 5 12.8Z' fill='%23000' stroke='%23000' stroke-width='2' stroke-linejoin='round'/%3E%3C/svg%3E");
+          mask-image: url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 16 16'%3E%3Cpath d='M5 3.2 11.4 8 5 12.8Z' fill='%23000' stroke='%23000' stroke-width='2' stroke-linejoin='round'/%3E%3C/svg%3E");
 }
 .abstract-toggle strong {
   color: #222;
@@ -226,7 +237,8 @@ img.notpresent {
   text-indent: 0;
 }
 @media (prefers-reduced-motion: reduce) {
-  .abstract-toggle::before { transition: none; }
+  .abstract-toggle::before,
+  .event-card-title::before { transition: none; }
 }
 
 .abstract-card {

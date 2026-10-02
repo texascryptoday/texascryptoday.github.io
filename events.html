@@ -10,6 +10,10 @@
       rel="stylesheet"
       integrity="sha384-sRIl4kxILFvY47J16cr9ZwB07vP4J8+LH7qKQnuqkuIAvNWLzeN8tE5YBujZqJLB"
       crossorigin="anonymous" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link rel="stylesheet"
+      href="https://fonts.googleapis.com/css2?family=Literata:opsz,wght@7..72,400..700&amp;display=swap" />
 <link rel="stylesheet" href="/css/site.css" type="text/css" />
 <script type="text/x-mathjax-config">
 MathJax.Hub.Config({ CommonHTML: { matchFontHeight: false, scale: 115 } });
@@ -50,7 +54,7 @@ MathJax.Hub.Config({ CommonHTML: { matchFontHeight: false, scale: 115 } });
 <h1 class="page-title">Past Events</h1>
 <p class="program-hint">Click on an event to view the program.</p>
 <div class="event-card" id="7-TAMU">
-  <a class="event-card-header" data-bs-toggle="collapse" href="#event-7-TAMU">
+  <a class="event-card-header collapsed" data-bs-toggle="collapse" href="#event-7-TAMU" aria-expanded="false" aria-controls="event-7-TAMU">
     <span class="event-card-title">7th Texas Crypto Day</span>
     <span class="event-card-meta">Texas A&amp;M &middot; April 24, 2026</span>
   </a>
@@ -194,7 +198,7 @@ MathJax.Hub.Config({ CommonHTML: { matchFontHeight: false, scale: 115 } });
   </div>
 </div>
 <div class="event-card" id="6-UTAustin">
-  <a class="event-card-header" data-bs-toggle="collapse" href="#event-6-UTAustin">
+  <a class="event-card-header collapsed" data-bs-toggle="collapse" href="#event-6-UTAustin" aria-expanded="false" aria-controls="event-6-UTAustin">
     <span class="event-card-title">6th Texas Crypto Day</span>
     <span class="event-card-meta">UT Austin &middot; April 25, 2025</span>
   </a>
@@ -306,7 +310,7 @@ MathJax.Hub.Config({ CommonHTML: { matchFontHeight: false, scale: 115 } });
   </div>
 </div>
 <div class="event-card" id="5-Rice">
-  <a class="event-card-header" data-bs-toggle="collapse" href="#event-5-Rice">
+  <a class="event-card-header collapsed" data-bs-toggle="collapse" href="#event-5-Rice" aria-expanded="false" aria-controls="event-5-Rice">
     <span class="event-card-title">5th Texas Crypto Day</span>
     <span class="event-card-meta">Rice University &middot; December 13, 2024</span>
   </a>
@@ -429,7 +433,7 @@ MathJax.Hub.Config({ CommonHTML: { matchFontHeight: false, scale: 115 } });
   </div>
 </div>
 <div class="event-card" id="4-TAMU">
-  <a class="event-card-header" data-bs-toggle="collapse" href="#event-4-TAMU">
+  <a class="event-card-header collapsed" data-bs-toggle="collapse" href="#event-4-TAMU" aria-expanded="false" aria-controls="event-4-TAMU">
     <span class="event-card-title">4th Texas Crypto Day</span>
     <span class="event-card-meta">Texas A&amp;M &middot; April 26, 2024</span>
   </a>
@@ -530,7 +534,7 @@ MathJax.Hub.Config({ CommonHTML: { matchFontHeight: false, scale: 115 } });
   </div>
 </div>
 <div class="event-card" id="3-UTDallas">
-  <a class="event-card-header" data-bs-toggle="collapse" href="#event-3-UTDallas">
+  <a class="event-card-header collapsed" data-bs-toggle="collapse" href="#event-3-UTDallas" aria-expanded="false" aria-controls="event-3-UTDallas">
     <span class="event-card-title">3rd Texas Crypto Day</span>
     <span class="event-card-meta">UT Dallas &middot; December 8, 2023</span>
   </a>
@@ -628,7 +632,7 @@ MathJax.Hub.Config({ CommonHTML: { matchFontHeight: false, scale: 115 } });
   </div>
 </div>
 <div class="event-card" id="2-UTAustin">
-  <a class="event-card-header" data-bs-toggle="collapse" href="#event-2-UTAustin">
+  <a class="event-card-header collapsed" data-bs-toggle="collapse" href="#event-2-UTAustin" aria-expanded="false" aria-controls="event-2-UTAustin">
     <span class="event-card-title">2nd Texas Crypto Day</span>
     <span class="event-card-meta">UT Austin &middot; April 14, 2023</span>
   </a>
@@ -756,7 +760,7 @@ MathJax.Hub.Config({ CommonHTML: { matchFontHeight: false, scale: 115 } });
   </div>
 </div>
 <div class="event-card" id="1-TAMU">
-  <a class="event-card-header" data-bs-toggle="collapse" href="#event-1-TAMU">
+  <a class="event-card-header collapsed" data-bs-toggle="collapse" href="#event-1-TAMU" aria-expanded="false" aria-controls="event-1-TAMU">
     <span class="event-card-title">1st Texas Crypto Day</span>
     <span class="event-card-meta">Texas A&amp;M &middot; December 2, 2022</span>
   </a>
@@ -895,15 +899,6 @@ MathJax.Hub.Config({ CommonHTML: { matchFontHeight: false, scale: 115 } });
 </div>
   </div>
 </div>
-<script>
-document.querySelectorAll(".event-card").forEach(function(card) {
-  card.addEventListener("click", function(e) {
-    if (e.target.closest("a, .abstract-card")) return;
-    var el = card.querySelector(":scope > .collapse, :scope > .collapsing");
-    if (el) bootstrap.Collapse.getOrCreateInstance(el).toggle();
-  });
-});
-</script>
 </div>
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.8/dist/js/bootstrap.bundle.min.js"
