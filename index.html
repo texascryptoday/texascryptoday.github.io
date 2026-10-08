@@ -125,6 +125,14 @@ MathJax.Hub.Config({ CommonHTML: { matchFontHeight: false, scale: 115 } });
   <td class="time-col">2:25-2:50</td>
   <td>
     <strong><a href="https://chuhanlu.github.io/">Chuhan Lu</a></strong> <span class="affiliation">(Rice University)</span>
+    <div class="talk-title"><a class="abstract-toggle collapsed" data-bs-toggle="collapse" href="#talk4" role="button" aria-expanded="false" aria-controls="talk4">Zero-Knowledge for Quantum Promise Problems</a> <span class="iconbox"><img class="pubicon notpresent" src="/img/icons/pdf.svg" alt="PDF"><img class="pubicon notpresent" src="/img/icons/video.svg" alt="Video"><img class="pubicon notpresent" src="/img/icons/slides.svg" alt="Slides"></span></div>
+    <div class="collapse" id="talk4">
+      <div class="card card-body abstract-card">
+        <p>A zero-knowledge proof convinces a verifier that a statement is true without revealing anything beyond its truth. Zero-knowledge proofs for NP, and their quantum analogues for QMA, concern statements given as classical strings. In a quantum promise problem, the instance is itself a quantum state, available only through copies, and it is not clear whether zero-knowledge remains possible. We study this question for pQMA and mQMA, the analogues of QMA whose instances are pure and mixed states, respectively.</p>
+<p>For pure states, we introduce Pure-state Quantum Constraint Consistency (pQuCC), in which the constraints are given as copies of pure states. We show that pQuCC is pQMA-complete and admits a three-message zero-knowledge proof assuming only EFI pairs, yielding zero-knowledge proofs for all of pQMA. We further show that this protocol is a proof of quantum knowledge: any prover that convinces the verifier must know a witness.</p>
+<p>For mixed states, the picture flips. Assuming post-quantum public-key encryption, we construct a language in mQCMA \(\subseteq\) mQMA that has no zero-knowledge proof, even when the honest prover is unbounded. This complements a recent result of Malavolta, which rules out zero-knowledge when the honest prover is efficient.</p>
+      </div>
+    </div>
   </td>
 </tr>
 <tr class="break-row">
